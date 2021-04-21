@@ -4,10 +4,10 @@ class Hero
   
   @@all = []
   
-  def initialize(name, power, biography)
-    @name = name
-    @power = power
-    @biography = biography
+  def initialize(args)
+    @name = args["name"]
+    @power = args["power"]
+    @biography = ["bio"]
     self.class.all << self
   end
   
