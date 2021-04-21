@@ -7,7 +7,7 @@ class Hero
   def initialize(args)
     @name = args["name"]
     @power = args["power"]
-    @biography = ["bio"]
+    @biography = args["bio"]
     self.class.all << self
   end
   
