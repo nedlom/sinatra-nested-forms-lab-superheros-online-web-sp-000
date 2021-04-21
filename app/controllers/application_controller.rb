@@ -11,7 +11,7 @@ class App < Sinatra::Base
     post '/teams' do
       @team = Team.new(params)
       
-      @params.each do |m|
+      params["team"]["members"].each do |m|
         Hero.new(m)
       end
       
